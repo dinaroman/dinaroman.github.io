@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Hidratacion</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+   
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dosis:wght@200&family=Nova+Round&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="contenedor">
-        <div id="calculadora">
-            <div class="contenido">
-                <h1 id="titulo1">Hidratación Basal</h1>
-                <input id='peso' type="number" placeholder="Peso del paciente...">
-                <p id='error'>Debe completar todos los datos correctamente</p>
-                <button id="calcular">Calcular</button>
-                <p id="resultados">RESULTADOS</p>
-                <div id="resultado1">
-                    <p id="calculo1"></p>
-                    <p id='flu'></p>
-                    <p id='man'></p>
-                </div>
-                <div id="resultado2">
-                    <p id="calculo2"></p>
-                    <p id='sc1'></p>
-                    <p id='sc2'></p>
-                </div>
-            </div>
-        </div>
-        <div id="detalle">
-            <div class="contenido">
-                
+    <div id = "tarjeta">
 
-                <h1>Instrucciones</h1>
-                <ol class="listas">
-                    <li>De 0kg hasta 30kg se calcula por método de Holliday Segar</li>
-                    <li>Desde 31kg para arriba se calcula por método de Superficie Corporal</li>
-                    
-                </ol>
-            </div>
+        <div class = "lado">
+            
+            <h1>Hidratación Basal</h1>
+            <p>Completa todos los datos</p>
+            <input id ='peso' type="number" placeholder="Peso en kg...">
+            <p id = 'error'> Debe completar todos los datos</p>
+            <button id="calcular">Calcular</button>
+            <p id="sc">RESULTADOS</p>
+            <p id='flu'></p>
+            <p id='man'></p>
+            <p id='sc1'></p>
+            <p id='sc2'></p>
+        </div>
+
+        <div class = "lado lado--rosa">
+            
+            <h1>¿Cómo se calcula?</h1>
+            <ol class="listas">
+                <li>De 0kg hasta 30kg se calcula por método de Holliday Segar</li>
+                <li>Desde 31kg para arriba se calcula por método de Superficie Corporal</li>
+                
+            </ol>
         </div>
     </div>
+
 </body>
 </html>
